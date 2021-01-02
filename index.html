@@ -11,42 +11,25 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-    <form action="post">
-      <!-- Add a label for 'ownername'-->
-      <!-- Add a text input with the id and name attributes set to 'ownername' -->
-      <!-- Include the place holder text "Owner Name" and make this input required -->
-      <label for="ClientName">Client Name</label>
-      <input type="text" id="fullname" name="fullname" placeholder="full name" required>
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter Message">
+
+      <input type="checkbox" id="checkbox">
+
+      <input type="submit">
 
 
-      <!-- Add a label for 'email'-->
-      <!-- Add an email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Owner Email" and make this input required -->
-      <label for="email">Owner Email</label>
-      <input type="email" id="email" name="email" placeholder="Client Email" required>
 
-
-      <!-- Add a label for 'phone'-->
-      <!-- Add a tel input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Owner Telephone (optional)" -->
-      <label for="phone">Owner Telephone (optional)</label>
-      <input type="tel" id="phone" name="phone" placeholder="Client Telephone (optional)">
-
-
-      <!-- Add a label for 'message'-->
-      <!-- Add a textarea with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Dog notes" -->
-      <label for="message">Anything we should know about you?</label>
-      <textarea id="message" name="message" placeholder="Client Notes">
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-      <h3>Please select how I can help you</h3>
-      <input type="checkbox" id="checkbox" name="option 1" value="coding"> Coding <br>
-      
-
-      <!-- Add an input with the type set to 'submit' -->
-      <input type="submit" value="Let get to work!">
-      </form>
+    </form>
   </body>
 </html>
